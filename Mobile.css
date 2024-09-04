@@ -1,0 +1,175 @@
+/* Default styles for desktop and larger screens */
+body {
+	font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+	background-color: #bfa94b;
+}
+
+header {
+	background-color: #f5f5dc;
+	padding: 10px;
+	text-align: center;
+}
+
+nav ul {
+	
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	
+}
+
+nav li {
+	
+	display: inline-block;
+	margin-right: 20px;
+	
+}
+
+nav a {
+	
+	
+	text-decoration: none;
+	
+}
+
+main {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;	
+}
+
+.hover-link {
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
+  }
+  
+  .hover-link:hover {
+	background-color: #3a2d04;
+	color: white;
+  }
+
+  
+
+#section1 {
+	
+	
+    padding: 20px;
+	color: white;
+	background-color:#bfa94b;
+	text-align: center;
+}
+#section2 {
+	
+	background-color: #f5f5dc;
+	padding: 20px;
+	/*border: 1px solid #f5f5dc;
+	box-shadow: 0 0 10px#f5f5dc;*/
+	text-align: center;
+}
+#section4 {
+	
+	
+	padding: 20px;
+	background-color:#f5f5dc;
+	text-align: left;
+	/*border: 1px solid black;
+	box-shadow: 0 0 10px red;*/
+	
+}
+#section3 {
+	
+	
+	padding: 20px;
+	background-color:#f5f5dc;
+	/*border: 1px solid black;
+	box-shadow: 0 0 10px red;*/
+	text-align: center;
+	
+}
+footer {
+	background-color: #f5f5dc;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+.blinking-link {
+	text-decoration: none;
+	animation: blink 2s infinite;
+	font-size: 24px;
+	font-weight: bold;
+	color: #000;
+  }
+  
+  @keyframes blink {
+	0% {
+	  color: #ff0000; /* red */
+	  opacity: 1;
+	}
+	10% {
+	  opacity: 0;
+	}
+	20% {
+	  color: #ffff00; /* yellow */
+	  opacity: 1;
+	}
+	30% {
+	  opacity: 0;
+	}
+	40% {
+	  color: #00ff00; /* green */
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+	60% {
+	  color: #0000ff; /* blue */
+	  opacity: 1;
+	}
+	70% {
+	  opacity: 0;
+	}
+	80% {
+	  color: #ff00ff; /* magenta */
+	  opacity: 1;
+	}
+	90% {
+	  opacity: 0;
+	}
+	100% {
+	  color: #ff0000; /* red */
+	  opacity: 1;
+	}
+  }
+/* Styles for screens smaller than 600px (e.g. mobile devices) 
+@media screen and (max-width: 750px) {
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 8px;
+  
+  }
+
+  header {
+    padding: 0.5rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}*/
