@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <title>Kendo</title>
+</head>
+<head>
+	<link rel="stylesheet" type="text/css" href="hamburger.css"></link>
+    
+
+</head>
+<div id="hmenu">
+    <input  id="hcheck" type="checkbox">
+    <label id="hopen" for="hcheck">
+      <img src="icon.png" alt="menu" width="104" height="104"><b>メニュー</b>
+    </label>
+    <label id="hclose" for="hcheck"></label>
+    
+    <nav class ="menu2">
+      <ul style="color: white;">
+      <section id="section1">	
+          <div id="menu-container">
+          <script src="script.js"></script>          
+          </div>
+       </section>
+      </ul>
+    </nav>
+
+    <header>
+      <section id="section4">
+        <div id="header-container"></div>
+        <script src="script.js"></script>
+      </section>
+    </header>
+
+    <section id="section2">
+    <div class="list-wrapper">
+      <ul class="list">
+        <li class="item">
+          <div class="content">
+            <img src="kendo1.jpg" alt="Image 1" width="600px" height="400px">
+          </div>
+        </li>
+        <li class="item">
+          <div class="content">
+          <img src="kendo2.jpg" alt="Image 2" width="600px" height="400px">
+          </div>
+       </li>
+        <li class="item">
+          <div class="content">
+            <img src="kendo3.jpg" alt="Image 3" width="600px" height="400px">
+          </div>
+        </li>
+      </ul>
+      <!-- We're calling `handleClick` with a direction argument when the buttons are clicked -->
+      <button onclick="handleClick('previous')" class="button button--previous" type="button">➜</button>
+      <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
+    </div>
+    <script>
+      const list = document.querySelector(".list");
+    
+      // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+      const item = document.querySelector(".item");
+      const itemWidth = item.offsetWidth;
+    
+      function handleClick(direction) {
+        // Based on the direction we call `scrollBy` with the item width we got earlier
+        if(direction === "previous") {
+          list.scrollBy({ left: -itemWidth, behavior: "smooth" });
+        } else {
+          list.scrollBy({ left: itemWidth, behavior: "smooth" });
+        }
+      }
+    </script>
+    </section>
+
+        <style>
+            .frame {
+                border: 1px solid #bfa94b;
+                padding: 20px;
+                width: 90%;
+                margin: 40px auto;
+                text-align: center;
+            }
+        </style>
+        <section id="section3">
+          
+          <p id="info" class="frame" style="font-size: xx-large;">
+                              
+            剣道を通して 健康な体と心を育成する<br>
+子どもたちは、体を動かすことが大好きです。いろいろなスポーツにとりくみ、<br>
+ちびっこのスポーツも年々盛んになってきています。 <br>
+剣道は、「稽古をする」ものです。竹刀を持って基礎となる技や動作を身につけさせることも、目標のひとつですが、剣道には心(精神)の教育、<br>
+つまり「人間形成」という大きな目標があります。<br><br>
+曜日と時程    　　　　　　　　<br><br>
+【小・中学生の部】<br>火・木・金<br>PM６時３０分～８時３０分<br><br>
+
+【成人の部】<br>木<br>PM８時３０分～１０時<br>
+<br>◎無料バス運行 　　　　　　　　　　<br>
+　　◎入会金　￥5,000⁻(垂れネーム代 等) 　　　　　　　　　　<br>
+　　◎毎月謝　￥3,000 　　　　　　　　　<br>
+　　◎保険料　￥1,500(毎年度更新) <br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　<h1>お問い合わせ ℡042-557-0650</h1><br>
+            
+</p>
+  
+</section>
+</div>
+</html>
